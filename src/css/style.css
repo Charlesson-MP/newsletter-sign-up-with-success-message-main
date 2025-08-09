@@ -86,7 +86,7 @@ label {
     font-weight: 700;
 }
 
-span {
+.msgErro {
     font-size: .8rem;
     color: var(--red);
     display: none;
@@ -109,7 +109,7 @@ input {
     color: var(--red);
 }
 
-#btnSubmit {
+#btnSubmit, #btnDismiss {
     width: 100%;
     padding: 1rem;
     border-radius: .35rem;
@@ -119,11 +119,41 @@ input {
     font-weight: 500;
 }
 
-#btnSubmit:hover {
+#btnSubmit:hover, #btnDismiss:hover {
     background: linear-gradient(to right, var(--gradient-color1), var(--gradient-color2));
 }
 
-/* container-confirmation settings */
+/* confirmation-section settings */
 .confirmation-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.confirmation-section img {
+    width: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.confirmation-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#userEmail {
+    font-weight: 700;
+}
+
+.confirmation-section button {
+    align-self: flex-end;
+}
+
+.desaparece {
     display: none;
 }
