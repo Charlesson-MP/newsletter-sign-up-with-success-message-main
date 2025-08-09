@@ -89,7 +89,6 @@ label {
 .msgErro {
     font-size: .8rem;
     color: var(--red);
-    display: none;
 }
 
 input {
